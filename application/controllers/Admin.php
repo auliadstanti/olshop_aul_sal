@@ -13,10 +13,12 @@ class Admin extends CI_Controller {
 			$this->load->library('acl');
 			if (!$this->acl->is_public($current_controller)) {
 				if (!$this->acl->is_allowed($current_controller,$data['level'])) {
+					echo '<script>alert("Tidak Dapat Akses")</script>';
 					redirect('Login/logout','refresh');
 				}
 			}
 		}else{
+			echo '<script>alert("Login Dahulu")</script>';
 			redirect('Login');
 		}
 	}

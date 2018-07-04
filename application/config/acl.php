@@ -57,10 +57,14 @@ $acl = array(
 
 	/* WELCOME */
 
-	'Home/index' => array(
+	'Home' => array(
 		'public'
 	),
 	'Admin' => array(
+		'admin' => true,
+		'user' => false
+	),
+	'Users' => array(
 		'admin' => true,
 		'user' => false
 	)
