@@ -38,6 +38,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="<?php echo base_url('Home') ?>">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="<?php echo base_url('Cart') ?>">Cart</a>
+            </li>
           <?php endif ?>
         </ul>
         <ul class="navbar-nav mr-0">

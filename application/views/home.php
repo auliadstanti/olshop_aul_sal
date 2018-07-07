@@ -91,8 +91,27 @@
       					<h2 class="featurette-heading"><?php echo $value['nama'] ?> <span class="text-muted"><?php echo $value['merk'] ?></span></h2>
       					<p class="lead">
       						Kategori = <?php echo $value['kategori'] ?><br>
-      						Harga = <?php echo $value['harga'] ?><br>
-      						Stok = <?php echo $value['stok'] ?>
+      						<?php echo form_open('Cart/insert_cart'); ?>
+      						<input type="hidden" name="id" value="<?php echo $value['id'] ?>">
+      						<input type="hidden" name="nama" value="<?php echo $value['nama'] ?>">
+      						<div class="form-group">
+      							<label for="">Harga</label>
+      							<input type="text" class="form-control" readonly="" value="<?php echo $value['harga'] ?>" name="harga">
+      						</div>
+      						<div class="form-group">
+      							<label for="">Ukuran</label>
+      							<select name="ukuran" class="form-control">
+      								<?php foreach (explode(',',$value['ukuran_tersedia']) as $v): ?>
+      									<option value="<?php echo $v ?>"><?php echo $v ?></option>
+      								<?php endforeach ?>
+      							</select>
+      						</div>
+      						<div class="form-group">
+      							<label for="">Jumlah</label>
+      							<input type="number" class="form-control" min="1" value="1" max="<?php echo $value['stok'] ?>" name="jumlah">
+      						</div>
+      						<input type="submit" value="Add to Cart" class="btn btn-info">
+      						<?php echo form_close(); ?>
       					</p>
       				</div>
       				<div class="col-md-5">

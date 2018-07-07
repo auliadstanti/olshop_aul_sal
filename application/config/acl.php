@@ -71,6 +71,10 @@ $acl = array(
 	'Sepatu' => array(
 		'admin' => true,
 		'user' => false
+	),
+	'Cart' => array(
+		'admin' => true,
+		'user' => true
 	)
 
 );
