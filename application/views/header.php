@@ -18,7 +18,7 @@
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Olshop Admin</a>
+      <a class="navbar-brand" href="#">Olshop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,6 +30,9 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="<?php echo base_url('Users') ?>">Users</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="<?php echo base_url('Sepatu') ?>">Sepatu</a>
           </li>
           <?php else: ?>
             <li class="nav-item active">

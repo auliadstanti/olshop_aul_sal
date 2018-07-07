@@ -25,6 +25,8 @@ class Home extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('home');
+		$this->load->model("Sepatu_model");
+		$data['data_sepatu'] = $this->Sepatu_model->getDataSepatu();
+		$this->load->view('home',$data);
 	}
 }
