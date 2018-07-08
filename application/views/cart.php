@@ -109,6 +109,7 @@
 
                   <p>
                         <?php echo form_submit('', 'Update your Cart',array('class'=>'btn btn-success')); ?>
+                        <a href="<?php echo base_url('Cart/checkout') ?>" class="btn btn-primary">Checkout</a>
                   </p>
 
             </div><!-- /.container -->

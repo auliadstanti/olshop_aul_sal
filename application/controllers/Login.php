@@ -26,6 +26,7 @@ class Login extends CI_Controller {
 		if ($cekDB) {
 			$data = $this->Login_model->get_data($username);
 			$userdata = array(
+				'id' => $data['id'],
 				'username' => $username,
 				'level' => $data['level'],
 			);

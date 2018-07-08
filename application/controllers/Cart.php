@@ -58,4 +58,13 @@ class Cart extends CI_Controller {
 		$this->cart->remove($rowid);
 		redirect('Cart');
 	}
+	public function checkout()
+	{
+		$this->load->model('Transaksi_model');
+		$cart = $this->cart->contents();
+		$this->Transaksi_model->checkout($cart);
+		$this->cart->destroy();
+		echo '<script>alert("Terima kasih telah membeli barang kami")</script>';
+		redirect('Home','refresh');
+	}
 }
