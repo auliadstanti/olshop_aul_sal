@@ -1,4 +1,5 @@
 <?php $this->load->view('header') ?>
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.17/css/jquery.dataTables.min.css">
 <main role="main" class="container" style="padding-top: 60px;">
 	<div class="row">
 		<div class="col-12">
@@ -9,7 +10,7 @@
 					</h1>
 					<a href="<?php echo base_url('Sepatu/create') ?>" class="btn btn-primary">Tambah</a>
 
-					<table class="table table-bordered table-hover table-inverse mt-3">
+					<table class="table table-bordered table-hover table-inverse mt-3" id="myTable">
 						<thead>
 							<tr>
 								<th>No</th>
@@ -51,3 +52,9 @@
 	</div>
 </main>
 <?php $this->load->view('footer') ?>
+<script src="//cdn.datatables.net/1.10.17/js/jquery.dataTables.min.js"></script>
+<script>
+	$(document).ready( function () {
+		$('#myTable').DataTable();
+	} );
+</script>
