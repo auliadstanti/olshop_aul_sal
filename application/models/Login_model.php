@@ -20,6 +20,15 @@ class Login_model extends CI_Model {
 		$query = $this->db->get('users');
 		return $query->result_array()[0];
 	}
+	public function register()
+	{
+		$set = array(
+			'username' => $this->input->post('username'),
+			'password' => md5($this->input->post('password')),
+			'level' => 'user'
+		);
+		$this->db->insert('users',$set);
+	}
 }
 
 ?>

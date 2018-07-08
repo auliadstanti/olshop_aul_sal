@@ -9,7 +9,7 @@
 body {
   position: relative;
   height: 100vh;
-  background-color: #51326a;
+  background-color: #123456;
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -78,9 +78,9 @@ body {
   opacity: 0.8;
   border-bottom-right-radius: 7px;
   border-top-right-radius: 7px;
-  background-image: -moz-linear-gradient(45deg, #51326a 0%, #c24581 100%);
-  background-image: -webkit-linear-gradient(45deg, #51326a 0%, #c24581 100%);
-  background-image: -ms-linear-gradient(45deg, #51326a 0%, #c24581 100%);
+  background-image: -moz-linear-gradient(45deg, #123456 0%, #c24581 100%);
+  background-image: -webkit-linear-gradient(45deg, #123456 0%, #c24581 100%);
+  background-image: -ms-linear-gradient(45deg, #123456 0%, #c24581 100%);
 }
 
 .login-screen .left-item .login-panel {
@@ -104,7 +104,7 @@ body {
   margin: 0 0 40px 0;
   text-transform: uppercase;
   font-size: 1em;
-  color: #51326a;
+  color: #123456;
 }
 
 .login-screen .left-item .login-panel .inner-login-panel .content-panel input {
@@ -113,7 +113,7 @@ body {
   outline: none;
   width: 100%;
   padding: 6px 0;
-  color: #51326a;
+  color: #123456;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -129,7 +129,7 @@ body {
 }
 
 .login-screen .left-item .login-panel .inner-login-panel .content-panel button {
-  background-color: #51326a;
+  background-color: #123456;
   border: 0;
   outline: none;
   color: #fff;
@@ -197,14 +197,14 @@ body {
       <div class="login-panel">
         <div class="inner-login-panel">
           <div class="content-panel">
-            <h3 class="title">Sign In</h3>
+            <h3 class="title">Register</h3>
             <?php echo validation_errors(); ?>
             <form method="post" action="">
               <input type="text" name="username" placeholder="USERNAME" />
               <input type="password" name="password" placeholder="PASSWORD" />
-              <button type="submit" value="Let's Go">Let's Go</button>
+              <button type="submit" value="Let's Go">Register</button>
             </form>
-            <?php echo anchor('Login/register', 'Register'); ?>
+            <?php echo anchor('Login', 'Login'); ?>
           </div>
         </div>
       </div>

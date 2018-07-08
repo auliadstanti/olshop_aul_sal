@@ -37,6 +37,18 @@ class Login extends CI_Controller {
 			return false;
 		}
 	}
+	public function register()
+	{
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('username','Username','required|trim|is_unique[users.username]');
+		$this->form_validation->set_rules('password','Password','required');
+		if ($this->form_validation->run() == FALSE) {
+			$this->load->view('register');
+		} else {
+			$this->Login_model->register();
+			redirect('Login','refresh');
+		}
+	}
 	public function logout()
 	{
 		$this->session->unset_userdata('logged_in');
