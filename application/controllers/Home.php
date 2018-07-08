@@ -18,9 +18,6 @@ class Home extends CI_Controller {
 					redirect('Login/logout','refresh');
 				}
 			}
-		}else{
-			echo '<script>alert("Login Dahulu")</script>';
-			redirect('Login');
 		}
 	}
 	public function index()

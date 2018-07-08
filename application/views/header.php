@@ -34,6 +34,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="<?php echo base_url('Sepatu') ?>">Sepatu</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="<?php echo base_url('Transaksi') ?>">Transaksi</a>
+          </li>
           <?php else: ?>
             <li class="nav-item active">
               <a class="nav-link" href="<?php echo base_url('Home') ?>">Home <span class="sr-only">(current)</span></a>

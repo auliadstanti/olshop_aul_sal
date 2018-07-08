@@ -75,6 +75,10 @@ $acl = array(
 	'Cart' => array(
 		'admin' => true,
 		'user' => true
+	),
+	'Transaksi' => array(
+		'admin' => true,
+		'user' => false
 	)
 
 );

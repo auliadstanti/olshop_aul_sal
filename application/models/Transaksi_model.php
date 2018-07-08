@@ -3,6 +3,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Transaksi_model extends CI_Model {
 
+	public function getDataTransaksi()
+	{
+		$this->db->select('transaksi.*,users.username');
+		$this->db->from('transaksi');
+		$this->db->join('users','transaksi.fk_users=users.id');
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+	public function getTransaksi($id)
+	{
+		$this->db->select('transaksi.*,users.username');
+		$this->db->from('transaksi');
+		$this->db->join('users','transaksi.fk_users=users.id');
+		$this->db->where('transaksi.id',$id);
+		$query = $this->db->get();
+		return $query->result_array()[0];
+	}
+	public function getDetailTransaksi($id)
+	{
+		$this->db->select('transaksi_detail.*,sepatu.nama,sepatu.kategori,sepatu.warna');
+		$this->db->from('transaksi_detail');
+		$this->db->join('sepatu','transaksi_detail.fk_sepatu=sepatu.id');
+		$this->db->where('fk_transaksi',$id);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
 	public function checkout($cart)
 	{
 		$set_transaktion = array(
@@ -22,6 +49,12 @@ class Transaksi_model extends CI_Model {
 			);
 			$this->db->insert('transaksi_detail',$set_detail);
 		}
+	}
+	public function kirim($id)
+	{
+		$set['status'] = 2;
+		$this->db->where('id',$id);
+		$this->db->update('transaksi',$set);
 	}
 	public function gen_nomor()
 	{
