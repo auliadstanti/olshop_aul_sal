@@ -24,42 +24,32 @@ class Users extends CI_Controller {
 		}
 	}
 	public function index()
-	{
-		$this->load->model('Users_model');
-		$data['users_list'] = $this->Users_model->getDataUsers();
-		$this->load->view('users/show',$data);
-	}
-	public function create()
-	{
-		$this->load->model('Users_model');
-		$this->load->library('form_validation');
-		$this->form_validation->set_rules('username','Username','is_unique[users.username]|required');
-		$this->form_validation->set_rules('password','Password','required');
-		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('users/create_view');
-		} else {
-			$this->Users_model->insert();
-			$this->load->view('users/create_sukses');
-		}
-	}
-	public function update($id)
-	{
-		$this->load->model('Users_model');
-		$this->load->library('form_validation');
-		$data['users'] = $this->Users_model->getUsers($id);
-		$this->form_validation->set_rules('username','Username','required');
-		$this->form_validation->set_rules('password','Password','required');
-		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('users/update_view',$data);
-		} else {
-			$this->Users_model->update($id);
-			$this->load->view('users/update_sukses');
-		}
-	}
-	public function delete($id)
-	{
-		$this->load->model('Users_model');
-		$this->Users_model->delete($id);
-		$this->load->view('users/delete_sukses');
-	}
+    {
+       $this->load->view('users/show');
+    }
+
+    public function getAll()
+    {
+        $this->load->model('Users_model');
+        $result = $this->Users_model->getAll(); 
+        header("Content-Type: application/json");
+        echo json_encode($result);
+    }
+
+    public function add(){
+        $this->load->model('Users_model');
+        $this->Users_model->save();
+    }
+
+    public function update()
+    {
+    	$this->load->model('Users_model');
+        $this->Users_model->update();
+    }
+    public function delete()
+    {
+        $this->load->model('Users_model');
+        $id = $this->input->post('id'); 
+        $this->Users_model->delete($id);
+    }
 }
