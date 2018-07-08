@@ -1,63 +1,71 @@
-<?php $this->load->view('header') ?>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/carousel.css') ?>">
-<!-- Begin page content -->
-<main role="main">
+<?php $this->load->view('fashe/header') ?>
+ <section class="slide1">
+            <div class="wrap-slick1">
+                  <div class="slick1">
+                        <div class="item-slick1 item1-slick1" style="background-image: url(<?php echo base_url('fashe_assets/') ?>images/master-slide-02.jpg);">
+                              <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+                                          Women Collection 2018
+                                    </span>
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-				<div class="container">
-					<div class="carousel-caption text-left">
-						<h1>Example headline.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1>Another example headline.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-				<div class="container">
-					<div class="carousel-caption text-right">
-						<h1>One more for good measure.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
+                                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                                          New arrivals
+                                    </h2>
 
+                                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
+                                          <!-- Button -->
+                                          <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                                Shop Now
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
 
-      <!-- Marketing messaging and featurettes
-      	================================================== -->
-      	<!-- Wrap the rest of the page in another container to center all the content. -->
+                        <div class="item-slick1 item2-slick1" style="background-image: url(<?php echo base_url('fashe_assets/') ?>images/master-slide-03.jpg);">
+                              <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
+                                          Women Collection 2018
+                                    </span>
 
-      	<div class="container marketing">
+                                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+                                          New arrivals
+                                    </h2>
 
+                                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+                                          <!-- Button -->
+                                          <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                                Shop Now
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="item-slick1 item3-slick1" style="background-image: url(<?php echo base_url('fashe_assets/') ?>images/master-slide-04.jpg);">
+                              <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+                                          Women Collection 2018
+                                    </span>
+
+                                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+                                          New arrivals
+                                    </h2>
+
+                                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+                                          <!-- Button -->
+                                          <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                                Shop Now
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+      </section>
+
+      <!-- Banner2 -->
+      <section class="banner2 bg5 p-t-55 p-b-55">
+            <div class="container">
                   <?php echo form_open('Cart/update_cart'); ?>
                   <h1>Keranjang</h1>
                   <table cellpadding="6" cellspacing="1" style="width:100%" border="0" class="table table-bordered">
@@ -111,15 +119,8 @@
                         <?php echo form_submit('', 'Update your Cart',array('class'=>'btn btn-success')); ?>
                         <a href="<?php echo base_url('Cart/checkout') ?>" class="btn btn-primary">Checkout</a>
                   </p>
+            </div>
+      </section>
+                  
 
-            </div><!-- /.container -->
-
-
-            <!-- FOOTER -->
-            <footer class="container">
-                <p class="float-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-          </footer>
-    </main>
-
-    <?php $this->load->view('footer') ?>
+    <?php $this->load->view('fashe/footer') ?>

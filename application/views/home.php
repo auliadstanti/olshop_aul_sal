@@ -1,139 +1,387 @@
-<?php $this->load->view('header') ?>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/carousel.css') ?>">
-<!-- Begin page content -->
-<main role="main">
+<?php $this->load->view('fashe/header') ?>
+      <section class="slide1">
+            <div class="wrap-slick1">
+                  <div class="slick1">
+                        <div class="item-slick1 item1-slick1" style="background-image: url(<?php echo base_url('fashe_assets/') ?>images/master-slide-02.jpg);">
+                              <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+                                          Women Collection 2018
+                                    </span>
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-				<div class="container">
-					<div class="carousel-caption text-left">
-						<h1>Example headline.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1>Another example headline.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-				<div class="container">
-					<div class="carousel-caption text-right">
-						<h1>One more for good measure.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
+                                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                                          New arrivals
+                                    </h2>
+
+                                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
+                                          <!-- Button -->
+                                          <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                                Shop Now
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="item-slick1 item2-slick1" style="background-image: url(<?php echo base_url('fashe_assets/') ?>images/master-slide-03.jpg);">
+                              <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
+                                          Women Collection 2018
+                                    </span>
+
+                                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+                                          New arrivals
+                                    </h2>
+
+                                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+                                          <!-- Button -->
+                                          <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                                Shop Now
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="item-slick1 item3-slick1" style="background-image: url(<?php echo base_url('fashe_assets/') ?>images/master-slide-04.jpg);">
+                              <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+                                          Women Collection 2018
+                                    </span>
+
+                                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+                                          New arrivals
+                                    </h2>
+
+                                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+                                          <!-- Button -->
+                                          <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                                Shop Now
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="banner bgwhite p-t-40 p-b-40">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                              <!-- block1 -->
+                              <div class="block1 hov-img-zoom pos-relative m-b-30">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-02.jpg" alt="IMG-BENNER">
+
+                                    <div class="block1-wrapbtn w-size2">
+                                          <!-- Button -->
+                                          <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                                Dresses
+                                          </a>
+                                    </div>
+                              </div>
+
+                              <!-- block1 -->
+                              <div class="block1 hov-img-zoom pos-relative m-b-30">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-05.jpg" alt="IMG-BENNER">
+
+                                    <div class="block1-wrapbtn w-size2">
+                                          <!-- Button -->
+                                          <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                                Sunglasses
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                              <!-- block1 -->
+                              <div class="block1 hov-img-zoom pos-relative m-b-30">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-03.jpg" alt="IMG-BENNER">
+
+                                    <div class="block1-wrapbtn w-size2">
+                                          <!-- Button -->
+                                          <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                                Watches
+                                          </a>
+                                    </div>
+                              </div>
+
+                              <!-- block1 -->
+                              <div class="block1 hov-img-zoom pos-relative m-b-30">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-07.jpg" alt="IMG-BENNER">
+
+                                    <div class="block1-wrapbtn w-size2">
+                                          <!-- Button -->
+                                          <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                                Footerwear
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                              <!-- block1 -->
+                              <div class="block1 hov-img-zoom pos-relative m-b-30">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-04.jpg" alt="IMG-BENNER">
+
+                                    <div class="block1-wrapbtn w-size2">
+                                          <!-- Button -->
+                                          <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                                Bags
+                                          </a>
+                                    </div>
+                              </div>
+
+                              <!-- block2 -->
+                              <div class="block2 wrap-pic-w pos-relative m-b-30">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/icons/bg-01.jpg" alt="IMG">
+
+                                    <div class="block2-content sizefull ab-t-l flex-col-c-m">
+                                          <h4 class="m-text4 t-center w-size3 p-b-8">
+                                                Sign up & get 20% off
+                                          </h4>
+
+                                          <p class="t-center w-size4">
+                                                Be the frist to know about the latest fashion news and get exclu-sive offers
+                                          </p>
+
+                                          <div class="w-size2 p-t-25">
+                                                <!-- Button -->
+                                                <a href="#" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+                                                      Sign Up
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- New Product -->
+      <section class="newproduct bgwhite p-t-45 p-b-105">
+            <div class="container">
+                  <div class="sec-title p-b-60">
+                        <h3 class="m-text5 t-center">
+                              Featured Products
+                        </h3>
+                  </div>
+
+                  <!-- Slide2 -->
+                  <div class="wrap-slick2">
+                        <div class="slick2">
+                              <?php foreach ($data_sepatu as $key => $value): ?>
+                                    <div class="item-slick2 p-l-15 p-r-15">
+                                    <!-- Block2 -->
+                                    <div class="block2">
+                                          <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                                                <img src="<?php echo base_url('assets/uploads/'.$value['gambar']) ?>" alt="IMG-PRODUCT">
+
+                                                <div class="block2-overlay trans-0-4">
+                                                      
+
+                                                      <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                            <!-- Button -->
+                                                            <a href="<?php echo base_url('Home/detail/'.$value['id']) ?>" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                                  Beli
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+                                          <div class="block2-txt p-t-20">
+                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                      <?php echo $value['nama'] ?>
+                                                </a>
+
+                                                <span class="block2-newprice m-text8 p-r-5">
+                                                      Rp. <?php echo $value['harga'] ?>
+                                                </span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <?php endforeach ?>
+                        </div>
+                  </div>
+
+            </div>
+      </section>
+
+      <!-- Banner2 -->
+      <section class="banner2 bg5 p-t-55 p-b-55">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
+                              <div class="hov-img-zoom pos-relative">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-08.jpg" alt="IMG-BANNER">
+
+                                    <div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
+                                          <span class="m-text9 p-t-45 fs-20-sm">
+                                                The Beauty
+                                          </span>
+
+                                          <h3 class="l-text1 fs-35-sm">
+                                                Lookbook
+                                          </h3>
+
+                                          <a href="#" class="s-text4 hov2 p-t-20 ">
+                                                View Collection
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
+                              <div class="bgwhite hov-img-zoom pos-relative p-b-20per-ssm">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/shop-item-09.jpg" alt="IMG-BANNER">
+
+                                    <div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
+                                          <div class="t-center">
+                                                <a href="product-detail.html" class="dis-block s-text3 p-b-5">
+                                                      Gafas sol Hawkers one
+                                                </a>
+
+                                                <span class="block2-oldprice m-text7 p-r-5">
+                                                      $29.50
+                                                </span>
+
+                                                <span class="block2-newprice m-text8">
+                                                      $15.90
+                                                </span>
+                                          </div>
+
+                                          <div class="flex-c-m p-t-44 p-t-30-xl">
+                                                <div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
+                                                      <span class="m-text10 p-b-1 days">
+                                                            69
+                                                      </span>
+
+                                                      <span class="s-text5">
+                                                            days
+                                                      </span>
+                                                </div>
+
+                                                <div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
+                                                      <span class="m-text10 p-b-1 hours">
+                                                            04
+                                                      </span>
+
+                                                      <span class="s-text5">
+                                                            hrs
+                                                      </span>
+                                                </div>
+
+                                                <div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
+                                                      <span class="m-text10 p-b-1 minutes">
+                                                            32
+                                                      </span>
+
+                                                      <span class="s-text5">
+                                                            mins
+                                                      </span>
+                                                </div>
+
+                                                <div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
+                                                      <span class="m-text10 p-b-1 seconds">
+                                                            05
+                                                      </span>
+
+                                                      <span class="s-text5">
+                                                            secs
+                                                      </span>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
 
 
-      <!-- Marketing messaging and featurettes
-      	================================================== -->
-      	<!-- Wrap the rest of the page in another container to center all the content. -->
+      <!-- Blog -->
+      <section class="blog bgwhite p-t-94 p-b-65">
+            <div class="container">
+                  <div class="sec-title p-b-52">
+                        <h3 class="m-text5 t-center">
+                              Our Blog
+                        </h3>
+                  </div>
 
-      	<div class="container marketing">
+                  <div class="row">
+                        <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+                              <!-- Block3 -->
+                              <div class="block3">
+                                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                          <img src="<?php echo base_url('fashe_assets/') ?>images/blog-01.jpg" alt="IMG-BLOG">
+                                    </a>
 
-      		<!-- Three columns of text below the carousel -->
-      		<div class="row">
-      			<div class="col-lg-4">
-      				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      				<h2>Aulia</h2>
-      				<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      				<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      			</div><!-- /.col-lg-4 -->
-      			<div class="col-lg-4">
-      				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      				<h2>Salsa</h2>
-      				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      				<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      			</div><!-- /.col-lg-4 -->
-      			<div class="col-lg-4">
-      				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      				<h2>Friend</h2>
-      				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      				<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      			</div><!-- /.col-lg-4 -->
-      		</div><!-- /.row -->
+                                    <div class="block3-txt p-t-14">
+                                          <h4 class="p-b-7">
+                                                <a href="blog-detail.html" class="m-text11">
+                                                      Black Friday Guide: Best Sales & Discount Codes
+                                                </a>
+                                          </h4>
 
+                                          <span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
+                                          <span class="s-text6">on</span> <span class="s-text7">July 22, 2017</span>
 
-      		<!-- START THE FEATURETTES -->
+                                          <p class="s-text8 p-t-16">
+                                                Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id euismod. Inter-dum et malesuada fames
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
 
-      		<?php foreach ($data_sepatu as $value): ?>
-      			<hr class="featurette-divider">
+                        <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+                              <!-- Block3 -->
+                              <div class="block3">
+                                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                          <img src="<?php echo base_url('fashe_assets/') ?>images/blog-02.jpg" alt="IMG-BLOG">
+                                    </a>
 
-      			<div class="row featurette">
-      				<div class="col-md-7">
-      					<h2 class="featurette-heading"><?php echo $value['nama'] ?> <span class="text-muted"><?php echo $value['merk'] ?></span></h2>
-      					<p class="lead">
-      						Kategori = <?php echo $value['kategori'] ?><br>
-      						<?php echo form_open('Cart/insert_cart'); ?>
-      						<input type="hidden" name="id" value="<?php echo $value['id'] ?>">
-      						<input type="hidden" name="nama" value="<?php echo $value['nama'] ?>">
-      						<div class="form-group">
-      							<label for="">Harga</label>
-      							<input type="text" class="form-control" readonly="" value="<?php echo $value['harga'] ?>" name="harga">
-      						</div>
-      						<div class="form-group">
-      							<label for="">Ukuran</label>
-      							<select name="ukuran" class="form-control">
-      								<?php foreach (explode(',',$value['ukuran_tersedia']) as $v): ?>
-      									<option value="<?php echo $v ?>"><?php echo $v ?></option>
-      								<?php endforeach ?>
-      							</select>
-      						</div>
-      						<div class="form-group">
-      							<label for="">Jumlah</label>
-      							<input type="number" class="form-control" min="1" value="1" max="<?php echo $value['stok'] ?>" name="jumlah">
-      						</div>
-      						<input type="submit" value="Add to Cart" class="btn btn-info">
-      						<?php echo form_close(); ?>
-      					</p>
-      				</div>
-      				<div class="col-md-5">
-      					<img class="featurette-image img-fluid mx-auto" src="<?php echo base_url('assets/uploads/'.$value['gambar']) ?>" alt="Generic placeholder image">
-      				</div>
-      			</div>
-      		<?php endforeach ?>
+                                    <div class="block3-txt p-t-14">
+                                          <h4 class="p-b-7">
+                                                <a href="blog-detail.html" class="m-text11">
+                                                      The White Sneakers Nearly Every Fashion Girls Own
+                                                </a>
+                                          </h4>
 
+                                          <span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
+                                          <span class="s-text6">on</span> <span class="s-text7">July 18, 2017</span>
 
+                                          <p class="s-text8 p-t-16">
+                                                Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
 
-      		<hr class="featurette-divider">
+                        <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+                              <!-- Block3 -->
+                              <div class="block3">
+                                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                          <img src="<?php echo base_url('fashe_assets/') ?>images/blog-03.jpg" alt="IMG-BLOG">
+                                    </a>
 
-      		<!-- /END THE FEATURETTES -->
+                                    <div class="block3-txt p-t-14">
+                                          <h4 class="p-b-7">
+                                                <a href="blog-detail.html" class="m-text11">
+                                                      New York SS 2018 Street Style: Annina Mislin
+                                                </a>
+                                          </h4>
 
-      	</div><!-- /.container -->
+                                          <span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
+                                          <span class="s-text6">on</span> <span class="s-text7">July 2, 2017</span>
 
+                                          <p class="s-text8 p-t-16">
+                                                Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed hendrerit ligula porttitor. Fusce sit amet maximus nunc
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
 
-      	<!-- FOOTER -->
-      	<footer class="container">
-      		<p class="float-right"><a href="#">Back to top</a></p>
-      		<p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      	</footer>
-      </main>
-
-      <?php $this->load->view('footer') ?>
+      <?php $this->load->view('fashe/footer') ?>
