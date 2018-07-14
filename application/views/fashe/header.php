@@ -41,34 +41,6 @@
       <header class="header1">
             <!-- Header desktop -->
             <div class="container-menu-header">
-                  <div class="topbar">
-                        <div class="topbar-social">
-                              <a href="#" class="topbar-social-item fa fa-facebook"></a>
-                              <a href="#" class="topbar-social-item fa fa-instagram"></a>
-                              <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-                              <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-                              <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-                        </div>
-
-                        <span class="topbar-child1">
-                              Free shipping for standard order over $100
-                        </span>
-
-                        <div class="topbar-child2">
-                              <span class="topbar-email">
-                                    <?php if ($this->session->userdata('logged_in') != null): ?>
-                                          <?php echo $this->session->userdata('logged_in')['username'] ?>
-                                    <?php endif ?>
-                              </span>
-
-                              <div class="topbar-language rs1-select2">
-                                    <select class="selection-1" name="time">
-                                          <option>USD</option>
-                                          <option>EUR</option>
-                                    </select>
-                              </div>
-                        </div>
-                  </div>
 
                   <div class="wrap_header">
                         <!-- Logo -->
@@ -81,12 +53,8 @@
                               <nav class="menu">
                                     <ul class="main_menu">
                                           <li>
-                                                <a href="index.html">Home</a>
-                                                <ul class="sub_menu">
-                                                      <li><a href="index.html">Homepage V1</a></li>
-                                                      <li><a href="home-02.html">Homepage V2</a></li>
-                                                      <li><a href="home-03.html">Homepage V3</a></li>
-                                                </ul>
+                                                <a href="">Home</a>
+
                                           </li>
 
                                           <li>
@@ -99,14 +67,6 @@
 
                                           <li>
                                                 <a href="cart.html">Features</a>
-                                          </li>
-
-                                          <li>
-                                                <a href="blog.html">Blog</a>
-                                          </li>
-
-                                          <li>
-                                                <a href="about.html">About</a>
                                           </li>
 
                                           <li>
@@ -291,10 +251,7 @@
 
                               <li class="item-menu-mobile">
                                     <a href="index.html">Home</a>
-                                    <ul class="sub-menu">
-                                          <li><a href="index.html">Homepage V1</a></li>
-                                          <li><a href="home-02.html">Homepage V2</a></li>
-                                          <li><a href="home-03.html">Homepage V3</a></li>
+
                                     </ul>
                                     <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
                               </li>

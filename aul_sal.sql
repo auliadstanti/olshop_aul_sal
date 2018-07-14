@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2018 at 08:06 PM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.9
+-- Generation Time: 14 Jul 2018 pada 11.04
+-- Versi Server: 10.1.25-MariaDB
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sepatu`
+-- Struktur dari tabel `sepatu`
 --
 
 CREATE TABLE `sepatu` (
@@ -42,7 +42,7 @@ CREATE TABLE `sepatu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `sepatu`
+-- Dumping data untuk tabel `sepatu`
 --
 
 INSERT INTO `sepatu` (`id`, `nama`, `merk`, `kategori`, `warna`, `ukuran_tersedia`, `stok`, `harga`, `gambar`, `tanggal`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `sepatu` (`id`, `nama`, `merk`, `kategori`, `warna`, `ukuran_tersedi
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaksi`
+-- Struktur dari tabel `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -63,7 +63,7 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `transaksi`
+-- Dumping data untuk tabel `transaksi`
 --
 
 INSERT INTO `transaksi` (`id`, `nomor`, `tanggal`, `status`, `fk_users`) VALUES
@@ -74,7 +74,7 @@ INSERT INTO `transaksi` (`id`, `nomor`, `tanggal`, `status`, `fk_users`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaksi_detail`
+-- Struktur dari tabel `transaksi_detail`
 --
 
 CREATE TABLE `transaksi_detail` (
@@ -86,7 +86,7 @@ CREATE TABLE `transaksi_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `transaksi_detail`
+-- Dumping data untuk tabel `transaksi_detail`
 --
 
 INSERT INTO `transaksi_detail` (`id`, `fk_transaksi`, `fk_sepatu`, `ukuran`, `jumlah`) VALUES
@@ -97,7 +97,7 @@ INSERT INTO `transaksi_detail` (`id`, `fk_transaksi`, `fk_sepatu`, `ukuran`, `ju
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -108,7 +108,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `level`) VALUES
@@ -158,37 +158,33 @@ ALTER TABLE `users`
 --
 ALTER TABLE `sepatu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT for table `transaksi_detail`
 --
 ALTER TABLE `transaksi_detail`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
 
 --
--- Constraints for dumped tables
---
-
---
--- Constraints for table `transaksi`
+-- Ketidakleluasaan untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`fk_users`) REFERENCES `users` (`id`);
 
 --
--- Constraints for table `transaksi_detail`
+-- Ketidakleluasaan untuk tabel `transaksi_detail`
 --
 ALTER TABLE `transaksi_detail`
   ADD CONSTRAINT `transaksi_detail_ibfk_1` FOREIGN KEY (`fk_sepatu`) REFERENCES `sepatu` (`id`),
