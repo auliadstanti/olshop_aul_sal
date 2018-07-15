@@ -16,7 +16,11 @@ class Login extends CI_Controller {
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('login');
 		} else {
-			redirect('Admin','refresh');
+			if($this->session->userdata('logged_in')['level'] == "admin"){
+				redirect('Admin','refresh');
+			}else{
+				redirect('Home','refresh');
+			}
 		}
 	}
 	public function cekDB($username)
