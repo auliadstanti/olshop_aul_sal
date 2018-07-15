@@ -44,47 +44,24 @@
 
                   <div class="wrap_header">
                         <!-- Logo -->
-                        <a href="index.html" class="logo">
+                        <a href="<?php echo base_url('') ?>" class="logo">
                               <img src="<?php echo base_url('fashe_assets/') ?>images/icons/logo.png" alt="IMG-LOGO">
                         </a>
 
-                        <!-- Menu -->
-                        <div class="wrap_menu">
-                              <nav class="menu">
-                                    <ul class="main_menu">
-                                          <li>
-                                                <a href="">Home</a>
-
-                                          </li>
-
-                                          <li>
-                                                <a href="product.html">Shop</a>
-                                          </li>
-
-                                          <li class="sale-noti">
-                                                <a href="product.html">Sale</a>
-                                          </li>
-
-                                          <li>
-                                                <a href="cart.html">Features</a>
-                                          </li>
-
-                                          <li>
-                                                <?php if ($this->session->userdata('logged_in') == null): ?>
-                                                      <a href="<?php echo base_url('Login'); ?>">Login</a>
-                                                <?php else: ?>
-                                                      <a href="<?php echo base_url('Login/logout'); ?>">Logout</a>
-                                                <?php endif ?>
-                                          </li>
-                                    </ul>
-                              </nav>
-                        </div>
+                        
 
                         <!-- Header Icon -->
                         <div class="header-icons">
-                              <a href="#" class="header-wrapicon1 dis-block">
-                                    <img src="<?php echo base_url('fashe_assets/') ?>images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+                              <?php if ($this->session->userdata('logged_in') == null): ?>
+                                                      <a href="<?php echo base_url('Login'); ?>" class="header-wrapicon1 dis-block">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/icons/icon-header-01.png" class="header-icon1" alt="ICON"> Login
                               </a>
+                        <?php else: ?>
+                                                      <a href="<?php echo base_url('Login/logout'); ?>" class="header-wrapicon1 dis-block">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/icons/icon-header-01.png" class="header-icon1" alt="ICON"> Logout
+                              </a>
+                                                <?php endif ?>
+                              
 
                               <span class="linedivide1"></span>
 

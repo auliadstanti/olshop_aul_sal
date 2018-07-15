@@ -8,6 +8,11 @@ class Sepatu_model extends CI_Model {
 		$query = $this->db->get('sepatu');
 		return $query->result_array();
 	}
+	public function getDataSepatuKategori($kategori)
+	{
+		$query = $this->db->where('kategori',$kategori)->get('sepatu');
+		return $query->result_array();
+	}
 	public function getSepatu($id)
 	{
 		$this->db->where('id',$id);
@@ -28,7 +33,7 @@ class Sepatu_model extends CI_Model {
 		);
 		$this->db->insert('sepatu',$data);
 	}
-	public function update($id)
+	public function update($id,$upload=false)
 	{
 		$set = array(
 			'nama' => $this->input->post('nama'),
@@ -38,8 +43,10 @@ class Sepatu_model extends CI_Model {
 			'ukuran_tersedia' => $this->input->post('ukuran_tersedia'),
 			'stok' => $this->input->post('stok'),
 			'harga' => $this->input->post('harga'),
-			'gambar' => $this->upload->data('file_name'),
 		);
+		if ($upload == true) {
+			$set['gambar'] = $this->upload->data('file_name');
+		}
 		$this->db->where('id',$id);
 		$this->db->update('sepatu',$set);
 	}

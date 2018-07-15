@@ -28,62 +28,37 @@
 
                         <ul>
                               <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Men
+                                    <a href="<?php echo base_url("Home/kategori/Heels"); ?>" class="s-text7">
+                                          Heels
                                     </a>
                               </li>
 
                               <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Women
+                                    <a href="<?php echo base_url("Home/kategori/Shoes"); ?>" class="s-text7">
+                                          Shoes
                                     </a>
                               </li>
 
                               <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Dresses
+                                    <a href="<?php echo base_url("Home/kategori/Boots"); ?>" class="s-text7">
+                                          Boots
                                     </a>
                               </li>
 
                               <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Sunglasses
+                                    <a href="<?php echo base_url("Home/kategori/Sandals"); ?>" class="s-text7">
+                                          Sandals
                                     </a>
                               </li>
+                               <li class="p-b-9">
+                                    <a href="<?php echo base_url("Home/kategori/Wedges"); ?>" class="s-text7">
+                                          Wedges
+                                    </a>
+                              </li>
+                              
                         </ul>
                   </div>
 
-                  <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-                        <h4 class="s-text12 p-b-30">
-                              Links
-                        </h4>
-
-                        <ul>
-                              <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Search
-                                    </a>
-                              </li>
-
-                              <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          About Us
-                                    </a>
-                              </li>
-
-                              <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Contact Us
-                                    </a>
-                              </li>
-
-                              <li class="p-b-9">
-                                    <a href="#" class="s-text7">
-                                          Returns
-                                    </a>
-                              </li>
-                        </ul>
-                  </div>
 
                   <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
                         <h4 class="s-text12 p-b-30">
@@ -117,26 +92,6 @@
                         </ul>
                   </div>
 
-                  <div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
-                        <h4 class="s-text12 p-b-30">
-                              Newsletter
-                        </h4>
-
-                        <form>
-                              <div class="effect1 w-size9">
-                                    <input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
-                                    <span class="effect1-line"></span>
-                              </div>
-
-                              <div class="w-size2 p-t-20">
-                                    <!-- Button -->
-                                    <button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-                                          Subscribe
-                                    </button>
-                              </div>
-
-                        </form>
-                  </div>
             </div>
 
             <div class="t-center p-l-15 p-r-15">

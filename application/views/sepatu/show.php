@@ -36,7 +36,7 @@
 									<td><?php echo $value['warna'] ?></td>
 									<td><?php echo $value['ukuran_tersedia'] ?></td>
 									<td><?php echo $value['stok'] ?></td>
-									<td><?php echo $value['harga'] ?></td>
+									<td><?php echo $this->cart->format_number($value['harga']) ?></td>
 									<td><img src="<?php echo base_url('assets/uploads/').$value['gambar'] ?>" alt="" width="100px"></td>
 									<td>
 										<a href="<?php echo base_url('Sepatu/update/'.$value['id']) ?>" class="btn btn-sm btn-success">Update</a>

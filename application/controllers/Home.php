@@ -26,6 +26,12 @@ class Home extends CI_Controller {
 		$data['data_sepatu'] = $this->Sepatu_model->getDataSepatu();
 		$this->load->view('home',$data);
 	}
+	public function kategori($kategori)
+	{
+		$this->load->model("Sepatu_model");
+		$data['data_sepatu'] = $this->Sepatu_model->getDataSepatuKategori($kategori);
+		$this->load->view('home_kategori',$data);
+	}
 	public function detail($id)
 	{
 		$this->load->model("Sepatu_model");

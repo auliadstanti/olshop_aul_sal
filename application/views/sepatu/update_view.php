@@ -5,9 +5,9 @@
 			<div class="card">
 				<div class="card-body">
 					<h1 class="card-title">
-						Tambah Users
+						Update Sepatu
 					</h1>
-					<?php if(isset($error['error'])) echo $error['error']; ?>
+					<?php if(isset($error)) echo $error; ?>
 					<?php echo validation_errors(); ?>
 					<?php echo form_open_multipart(''); ?>
 					<div class="form-group">
@@ -20,7 +20,14 @@
 					</div>
 					<div class="form-group">
 						<label for="">kategori</label>
-						<input type="text" name="kategori" class="form-control" value="<?php echo $sepatu['kategori'] ?>">
+						<select name="kategori" id="" class="form-control">
+							<option>Shoes</option>
+							<option>Heels</option>
+							<option>Wedges</option>
+							<option>Sandals</option>
+							<option>Boots</option>
+						</select>
+						<script>$("select[name='kategori']").val("<?php echo $sepatu['kategori'] ?>")</script>
 					</div>
 					<div class="form-group">
 						<label for="">warna</label>
@@ -42,7 +49,7 @@
 						<label for="">Gambar</label>
 						<input type="file" name="gambar" class="form-control">
 					</div>
-					<input type="submit" class="btn btn-primary" value="Tambah">
+					<input type="submit" class="btn btn-success" value="Update">
 					<?php echo form_close(); ?>
 				</div>
 			</div>
