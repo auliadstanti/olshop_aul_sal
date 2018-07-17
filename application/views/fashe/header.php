@@ -56,10 +56,15 @@
                                                       <a href="<?php echo base_url('Login'); ?>" class="header-wrapicon1 dis-block">
                                     <img src="<?php echo base_url('fashe_assets/') ?>images/icons/icon-header-01.png" class="header-icon1" alt="ICON"> Login
                               </a>
+                              
                         <?php else: ?>
                                                       <a href="<?php echo base_url('Login/logout'); ?>" class="header-wrapicon1 dis-block">
                                     <img src="<?php echo base_url('fashe_assets/') ?>images/icons/icon-header-01.png" class="header-icon1" alt="ICON"> Logout
                               </a>
+                              <?php if ($this->session->userdata("logged_in")['level'] == 'admin'): ?>
+                                    <a href="<?php echo base_url('Admin'); ?>" class="header-wrapicon1 dis-block ml-3"> Dashboard
+                              </a>
+                              <?php endif ?>
                                                 <?php endif ?>
                               
 

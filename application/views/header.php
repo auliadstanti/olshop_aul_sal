@@ -27,6 +27,9 @@
         <ul class="navbar-nav mr-auto">
          <?php if ($this->session->userdata('logged_in')['level'] == 'admin'): ?>
           <li class="nav-item active">  
+            <a class="nav-link" href="<?php echo base_url('Home') ?>">Home</a>
+          </li>
+          <li class="nav-item active">  
             <a class="nav-link" href="<?php echo base_url('Admin') ?>">Admin <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">

@@ -5,7 +5,7 @@
             <div class="container">
                   <div class="sec-title p-b-60">
                         <h3 class="m-text5 t-center">
-                              List Product , kategori = <?php echo $this->uri->segment('3') ?>
+                              <?php echo $this->uri->segment('3') ?>
                         </h3>
                   </div>
 
@@ -37,7 +37,7 @@
                                                 </a>
 
                                                 <span class="block2-newprice m-text8 p-r-5">
-                                                      Rp. <?php echo $value['harga'] ?>
+                                                      Rp <?php echo $this->cart->format_number($value['harga']) ?>
                                                 </span>
                                           </div>
                                     </div>

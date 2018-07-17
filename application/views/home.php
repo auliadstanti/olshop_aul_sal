@@ -96,7 +96,7 @@
                         <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
                               <!-- block1 -->
                               <div class="block1 hov-img-zoom pos-relative m-b-30">
-                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-03.jpg" alt="IMG-BENNER">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-07.jpg" alt="IMG-BENNER">
 
                                     <div class="block1-wrapbtn w-size2">
                                           <!-- Button -->
@@ -108,7 +108,7 @@
 
                               <!-- block1 -->
                               <div class="block1 hov-img-zoom pos-relative m-b-30">
-                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-07.jpg" alt="IMG-BENNER">
+                                    <img src="<?php echo base_url('fashe_assets/') ?>images/banner-03.jpg" alt="IMG-BENNER">
 
                                     <div class="block1-wrapbtn w-size2">
                                           <!-- Button -->
@@ -195,7 +195,7 @@
                                                 </a>
 
                                                 <span class="block2-newprice m-text8 p-r-5">
-                                                      Rp. <?php echo $value['harga'] ?>
+                                                      Rp <?php echo $this->cart->format_number($value['harga']) ?>
                                                 </span>
                                           </div>
                                     </div>
