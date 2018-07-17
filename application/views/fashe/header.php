@@ -67,7 +67,7 @@
 
                               <div class="header-wrapicon2">
                                     <img src="<?php echo base_url('fashe_assets/') ?>images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
-                                    <span class="header-icons-noti">0</span>
+                                    <span class="header-icons-noti"><?php echo count($this->cart->contents()) ?></span>
 
                                     <!-- Header cart noti -->
                                     <div class="header-cart header-dropdown">
